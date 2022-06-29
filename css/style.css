@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100wh;
+
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.container {
+  position: relative;
+  max-width: 1126px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 52px;
+}
+
+.header__logo {
+  width: 108px;
+  height: 32px;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+h1 {
+  font-weight: 750;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #090909;
+  font-stretch: 151;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79,
+    "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+
+.content {
+  display: flex;
+}
+.content__title {
+  width: 552px;
+  margin-top: 172px;
+}
+
+.content__btns {
+  position: relative;
+  display: flex;
+  gap: 24px;
+}
+
+.content__btns::after {
+  content: "Скоро запуск";
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 20px;
+  top: 39px;
+  left: 115px;
+  padding: 10px 15px;
+  background: #ff6700;
+  border-radius: 8px;
+  transform: rotate(-15deg);
+  font-weight: 750;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79,
+    "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+
+.content__img {
+  width: 312px;
+  height: 631px;
+  margin-left: 44px;
+}
+
+.content__img img {
+  width: 100%;
+}
+
+.content__btn {
+  display: flex;
+  gap: 12px;
+  padding: 12px 30px 14px 17px;
+  width: 200px;
+  height: 64px;
+  margin-top: 56px;
+  background: #6a6a6a;
+  border-radius: 36px;
+  font-weight: 550;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  font-stretch: 151;
+  cursor: pointer;
+}
+
+.btn__descr {
+  display: block;
+  width: 30px;
+  align-self: start;
+}
+
+.content__tabs {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.tabs__select {
+  position: relative;
+  margin-right: 10px;
+}
+.tabs__text {
+  font-weight: 750;
+  display: block;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #5337ff;
+  font-stretch: 151;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79,
+    "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+
+.tabs__select::after {
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: 6.8px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #6a6a6a;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tabs__btn-active .tabs__select::before {
+  content: "";
+  position: absolute;
+  right: 26.3px;
+  top: 3px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: solid 1px #5337ff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tabs__btn-active .tabs__select::after {
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: 6.8px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #5337ff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tabs__btn-active .tabs__text {
+  opacity: 1;
+  display: block;
+}
+
+.footer {
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 41px;
+  margin-bottom: 33px;
+  display: block;
+  bottom: 32px;
+  width: 185px;
+}
+.footer__text {
+  position: relative;
+  font-weight: 550;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #090909;
+  font-stretch: 151;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79,
+    "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+
+.footer__text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/arrow_down.png") transparent no-repeat center center;
+  left: -23px;
+}
